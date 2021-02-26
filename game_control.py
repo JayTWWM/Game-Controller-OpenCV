@@ -11,8 +11,8 @@ while(1):
 	_,img=cap.read()
 	im=img
 	
-	lower=np.array([65,60,60])
-	upper=np.array([80,255,255])
+	lower=np.array([36,0,0])
+	upper=np.array([86,255,255])
 	
 	converted=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 	skinMask=cv2.inRange(converted,lower,upper) 
